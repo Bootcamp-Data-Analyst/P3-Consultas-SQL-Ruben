@@ -10,7 +10,7 @@ SELECT * FROM country;
 SELECT * FROM rental;
 SELECT * FROM payment;
 
--- Unión de tablas. Se normaliza en 
+-- Unión de tablas.
 
 SELECT c.customer_id,
 	   TRIM(LOWER(CONCAT(c.first_name,' ',c.last_name))) AS customer_name,
