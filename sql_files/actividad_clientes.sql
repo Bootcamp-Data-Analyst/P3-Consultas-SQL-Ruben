@@ -14,8 +14,8 @@ SELECT * FROM payment;
 
 SELECT c.customer_id,
 	   TRIM(LOWER(CONCAT(c.first_name,' ',c.last_name))) AS customer_name,
-       TRIM(LOWER(a.address)) AS address,
-       TRIM(LOWER(a.district)) AS district,
+       -- TRIM(LOWER(a.address)) AS address, No se incluye debido a que no se realizará un análisis con esta columna 
+       -- TRIM(LOWER(a.district)) AS district, No se incluye debido a que no se realizará un análisis con esta columna 
        TRIM(LOWER(ci.city)) AS city,
        TRIM(LOWER(co.country)) AS country,
        r.rental_date,
