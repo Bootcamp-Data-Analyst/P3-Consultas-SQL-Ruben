@@ -10,7 +10,7 @@ SELECT * FROM film_actor;
 -- y otra con el número de películas por actor
 
 -- Primer dataframe
--- Se filtra para que aparezcan todas las peículas en las que contengan actores o no con la clausula LEFT
+-- Se filtra para que aparezcan todas las películas en las que contengan actores o no con la clausula LEFT
 SELECT f.film_id,
        TRIM(LOWER(f.title)) AS title,
        COUNT(a.actor_id) AS num_actors
